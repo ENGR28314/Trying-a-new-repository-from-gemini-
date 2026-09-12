@@ -126,16 +126,14 @@ st.title("🌍 AquaGuard AI7 — Decision Support Platform")
 st.markdown(f"**Project:** {project_name} | **Location:** {selected_city}, {selected_country} (`{lat:.4f}, {lon:.4f}`) | **Scenario:** {climate_scenario} ({scenario_horizon})")
 
 # Top KPI Summary Cards
-kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
+kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 with kpi1:
-    st.markdown(f'<div class="metric-card"><div class="metric-label">Overall Risk Score</div><div class="metric-value">{risk_results["overall_risk"]}</div></div>', unsafe_allow_html=True)
-with kpi2:
     st.markdown(f'<div class="metric-card"><div class="metric-label">Risk Category</div><div class="metric-value">{risk_results["risk_category"]}</div></div>', unsafe_allow_html=True)
-with kpi3:
+with kpi2:
     st.markdown(f'<div class="metric-card"><div class="metric-label">Climate Stress</div><div class="metric-value">{risk_results["climate_stress"]}</div></div>', unsafe_allow_html=True)
-with kpi4:
+with kpi3:
     st.markdown(f'<div class="metric-card"><div class="metric-label">Resilience</div><div class="metric-value">{risk_results["resilience"]}</div></div>', unsafe_allow_html=True)
-with kpi5:
+with kpi4:
     st.markdown(f'<div class="metric-card"><div class="metric-label">Risk Gap</div><div class="metric-value">{risk_results["risk_gap"]}</div></div>', unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
