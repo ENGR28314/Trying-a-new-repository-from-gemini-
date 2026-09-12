@@ -1,1 +1,13 @@
 
+streamlit>=1.42,<2
+pandas>=2.0,<3
+numpy>=1.26,<3
+plotly>=5.20,<7
+openpyxl>=3.1,<4
+groq>=0.31,<1
+SQLAlchemy>=2.0,<3
+psycopg2-binary>=2.9,<3
+GeoPandas>=1.0,<2
+Shapely>=2.0,<3
+requests>=2.31,<3
+pycountry>=24.6,<27
