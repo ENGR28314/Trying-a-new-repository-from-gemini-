@@ -6,7 +6,6 @@ import pycountry
 
 from db import get_cached_engine
 from data_validation import validate_uploaded_dataframe
-from risk_engine import calculate_risk
 from environmental_engine import analyze_environmental_dataframe
 from hazard_engine import evaluate_all_hazards
 from sector_engine import evaluate_sector_risks
@@ -15,7 +14,6 @@ from carbon_engine import get_carbon_footprint_summary
 from pollution_engine import analyze_air_pollution
 from water_engine import analyze_water_quality
 from effluent_engine import analyze_effluent_discharge
-from ai_risk_engine import get_ai_interpretation
 from mitigation_engine import generate_mitigation_plan
 from sustainability_engine import get_sustainability_mappings
 from geo_engine import load_cities_from_db, build_world_map
@@ -84,7 +82,7 @@ if not country_cities.empty:
     city_names = country_cities["name"].tolist()
 else:
     city_names = ["Capital City"]
-
+ai
 selected_city = st.sidebar.selectbox("City", city_names)
 
 # Get coordinates
