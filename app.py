@@ -82,7 +82,6 @@ if not country_cities.empty:
     city_names = country_cities["name"].tolist()
 else:
     city_names = ["Capital City"]
-ai
 selected_city = st.sidebar.selectbox("City", city_names)
 
 # Get coordinates
