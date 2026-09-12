@@ -1,1 +1,26 @@
 
+# Python / Streamlit runtime artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# Streamlit secrets and settings
+.streamlit/secrets.toml
+
+# IDE artifacts
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Output exports
+exports/
+*.csv
+*.xlsx
+*.pdf
