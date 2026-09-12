@@ -106,6 +106,13 @@ adaptive_capacity = st.sidebar.slider("Adaptive Capacity", 0.0, 100.0, 42.0)
 criticality = st.sidebar.slider("Asset Criticality", 0.0, 100.0, 70.0)
 
 # Execute Core Risk Engine
+# Temporary mock function to prevent NameError
+def calculate_risk(*args, **kwargs):
+    return {
+        "status": "Offline",
+        "score": 0,
+        "details": "Risk engine module removed."
+    }
 risk_results = calculate_risk(
     exposure, vulnerability, adaptive_capacity, sensitivity, criticality,
     scenario=climate_scenario, horizon=scenario_horizon
